@@ -1,79 +1,507 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; frame-src 'self'; media-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <title>Samuelle Celis | Frontend Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Samuelle Celis, a frontend developer from Baguio City, Philippines, building intuitive, user-focused experiences across web, mobile and desktop. Projects, skills, certifications and contact details.">
+    <meta name="author" content="Samuelle Celis">
+    <meta name="theme-color" content="#f5f5f3" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0e0e0d" media="(prefers-color-scheme: dark)">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Samuelle Celis | Frontend Developer Portfolio">
+    <meta property="og:description" content="Frontend developer from Baguio City building for web, mobile and desktop, and growing toward full-stack. Explore my projects, skills and certifications.">
+    <meta property="og:image" content="images/profile.jpg">
+    <meta property="og:image:alt" content="Portrait of Samuelle Celis">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
-    <title>Samuelle Celis Personal Portfolio</title>
-    <script src="script.js"></script>
+    <script src="theme.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div id="burger-menu">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-    </div>
-    <nav id="navbar">
-        <ul id="nav-links">
-            <li><a href="#welcome-section">Home</a></li>
-            <li><a href="#about-section">About</a></li>
-            <li><a href="#languages-section">Skills</a></li>
-            <li><a href="#projects-section">Projects</a></li>
-            <li><a href="#contact-section">Contact</a></li>
-        </ul>
-    </nav>
-    <section id="welcome-section" class="section-container">
-        <h1>Hey There! I am Samuelle</h1>
-        <h2>Future Full-Stack Developer</h2>
-        <div id="picture-container">
-            <img src="https://avatars.githubusercontent.com/u/179908302?v=4" alt="Profile Picture">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#top" aria-label="Samuelle Celis, back to top">
+                <span class="brand-mark" aria-hidden="true">SC</span>
+                <span class="brand-name">Samuelle Celis</span>
+            </a>
+
+            <nav class="site-nav" id="site-nav" aria-label="Primary">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="certifications.html">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode" data-theme-toggle>
+                    <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+                    <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-controls="site-nav" aria-expanded="false">
+                    <span class="menu-bar" aria-hidden="true"></span>
+                    <span class="menu-bar" aria-hidden="true"></span>
+                </button>
+            </div>
         </div>
-    </section>
-    <section id="about-section" class="section-container">
-        <h2>About the Student Developer</h2>
-        <div class="paragraph-container">
-            <p><strong>Born: Manila, 2004</strong></p>
-            <p>I started programming at 15 and have been passionate about mastering the <strong>"art of a developer"</strong>.</p>
-        </div>   
-    </section>
-    <section id="languages-section" class="section-container">
-        <div class="skill-container">
-            <h2>My Technologies</h2>
-            <ul>
-                <li><h5>HTML 65%</h5><span class="skill-bar"><span class="html"></span></span></li>
-                <li><h5>CSS 65%</h5><span class="skill-bar"><span class="css"></span></span></li>
-                <li><h5>Tailwind CSS 40%</h5><span class="skill-bar"><span class="tailwind"></span></span></li>
-                <li><h5>JavaScript 40%</h5><span class="skill-bar"><span class="js"></span></span></li>
-                <li><h5>Python 40%</h5><span class="skill-bar"><span class="python"></span></span></li>
-                <li><h5>Java 35%</h5><span class="skill-bar"><span class="java"></span></span></li>
-                <li><h5>React Native 30%</h5><span class="skill-bar"><span class="react-native"></span></span></li>
-                <li><h5>C# 25%</h5><span class="skill-bar"><span class="c-sharp"></span></span></li>
-                <li><h5>SQL 20%</h5><span class="skill-bar"><span class="sql"></span></span></li>
-            </ul>
-        </div>  
-    </section>
-    <section id="projects-section" class="section-container">
-        <h2>Projects</h2>
-        <div class="paragraph-container">
-            <p>Check out some of my works below:</p>
+    </header>
+
+    <main id="main">
+        <!-- Hero -->
+        <section class="hero" id="top" aria-labelledby="hero-title">
+            <div class="container hero-inner">
+                <div class="hero-copy">
+                    <p class="eyebrow reveal">Frontend Developer · Baguio City, PH</p>
+                    <h1 class="hero-title reveal" id="hero-title">Hey there! I&rsquo;m <span class="underline">Samuelle</span>.</h1>
+                    <p class="hero-lead reveal">Someone who is building intuitive, responsive, and user-focused experiences across web, mobile, and desktop platforms. Continuously learning and growing toward full-stack development.</p>
+                    <div class="hero-actions reveal">
+                        <a class="btn btn-primary" href="#projects">
+                            View my work
+                            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                        </a>
+                        <a class="btn btn-ghost" href="#contact">Get in touch</a>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal">
+                    <div class="avatar-frame">
+                        <img src="images/profile.jpg" alt="Portrait of Samuelle Celis" width="320" height="320" fetchpriority="high" decoding="async">
+                    </div>
+                    <span class="avatar-badge" aria-hidden="true">&lt;/&gt;</span>
+                </div>
+            </div>
+
+            <a class="scroll-cue" href="#about" aria-label="Scroll to About section">
+                <span aria-hidden="true"></span>
+            </a>
+        </section>
+
+        <!-- About -->
+        <section class="section" id="about" aria-labelledby="about-title">
+            <div class="container">
+                <header class="section-head reveal">
+                    <p class="eyebrow">01 / About</p>
+                    <h2 id="about-title">About me</h2>
+                </header>
+
+                <div class="about-grid">
+                    <div class="about-text reveal">
+                        <p class="lead">I&rsquo;m a <strong>frontend developer</strong> aiming to become <strong>full-stack</strong>. I started programming at 15 and have been passionate about mastering the <strong>&ldquo;art of a developer&rdquo;</strong> ever since.</p>
+                        <p>I love taking an idea and turning it into something people can actually click around in. Lately I&rsquo;ve been getting into the back end with Java, Spring Boot, PHP and Laravel, and honestly, the best way I learn is by building real things.</p>
+
+                        <figure class="quote">
+                            <blockquote>
+                                <p>&ldquo;Do not suffer imagined troubles.&rdquo;</p>
+                            </blockquote>
+                            <figcaption>Seneca <span>· my favorite quote</span></figcaption>
+                        </figure>
+                    </div>
+
+                    <dl class="facts reveal">
+                        <div class="fact">
+                            <dt>Based in</dt>
+                            <dd>Baguio City, Philippines</dd>
+                        </div>
+                        <div class="fact">
+                            <dt>Born</dt>
+                            <dd>2004</dd>
+                        </div>
+                        <div class="fact">
+                            <dt>Coding since</dt>
+                            <dd>2019</dd>
+                        </div>
+                        <div class="fact">
+                            <dt>Role</dt>
+                            <dd>Frontend &rarr; Full-stack</dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <div class="hobbies reveal">
+                    <h3 class="hobbies-title">Beyond the code</h3>
+                    <ul class="hobby-list" role="list">
+                        <li>Reading</li>
+                        <li>Board games</li>
+                        <li>Trading card games</li>
+                        <li>Video games</li>
+                        <li>Movies &amp; TV series</li>
+                        <li>Badminton</li>
+                        <li>Basketball</li>
+                        <li>Volleyball</li>
+                        <li>Bowling</li>
+                        <li>Beyblade</li>
+                        <li>Scenic photography</li>
+                        <li>Videography</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="section section-alt" id="skills" aria-labelledby="skills-title">
+            <div class="container">
+                <header class="section-head reveal">
+                    <p class="eyebrow">02 / Skills</p>
+                    <h2 id="skills-title">My toolkit</h2>
+                    <p class="section-sub">These are the languages, frameworks and tools I work with. I&rsquo;m always picking up something new.</p>
+                </header>
+
+                <div class="skill-groups">
+                    <section class="skill-group reveal" aria-labelledby="sg-frontend">
+                        <div class="skill-group-head">
+                            <span class="skill-group-index" aria-hidden="true">01</span>
+                            <h3 id="sg-frontend">Frontend</h3>
+                        </div>
+                        <ul class="skill-chips" role="list">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>TypeScript</li>
+                            <li>React</li>
+                            <li>React Native</li>
+                            <li>Tailwind CSS</li>
+                        </ul>
+                    </section>
+
+                    <section class="skill-group reveal" aria-labelledby="sg-backend">
+                        <div class="skill-group-head">
+                            <span class="skill-group-index" aria-hidden="true">02</span>
+                            <h3 id="sg-backend">Backend &amp; Languages</h3>
+                        </div>
+                        <ul class="skill-chips" role="list">
+                            <li>Java</li>
+                            <li>Spring Boot</li>
+                            <li>PHP</li>
+                            <li>Laravel</li>
+                            <li>Python</li>
+                            <li>C#</li>
+                            <li>C++</li>
+                            <li>SQL</li>
+                        </ul>
+                    </section>
+
+                    <section class="skill-group reveal" aria-labelledby="sg-cloud">
+                        <div class="skill-group-head">
+                            <span class="skill-group-index" aria-hidden="true">03</span>
+                            <h3 id="sg-cloud">Cloud, CMS &amp; Tools</h3>
+                        </div>
+                        <ul class="skill-chips" role="list">
+                            <li>Google Cloud Platform (GCP) Console</li>
+                            <li>GCP Fundamentals</li>
+                            <li>Bash / Shell scripting</li>
+                            <li>WordPress</li>
+                        </ul>
+                    </section>
+
+                    <section class="skill-group reveal" aria-labelledby="sg-ai">
+                        <div class="skill-group-head">
+                            <span class="skill-group-index" aria-hidden="true">04</span>
+                            <h3 id="sg-ai">AI &amp; Productivity</h3>
+                        </div>
+                        <ul class="skill-chips" role="list">
+                            <li>Prompt Engineering</li>
+                            <li>ChatGPT</li>
+                            <li>Cursor</li>
+                        </ul>
+                    </section>
+
+                    <section class="skill-group reveal" aria-labelledby="sg-creative">
+                        <div class="skill-group-head">
+                            <span class="skill-group-index" aria-hidden="true">05</span>
+                            <h3 id="sg-creative">Creative &amp; Marketing</h3>
+                        </div>
+                        <ul class="skill-chips" role="list">
+                            <li>Video Editing</li>
+                            <li>SEO Optimization</li>
+                            <li>Marketing Visuals Designer</li>
+                            <li>Quora</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="section" id="projects" aria-labelledby="projects-title">
+            <div class="container">
+                <header class="section-head reveal">
+                    <p class="eyebrow">03 / Projects</p>
+                    <h2 id="projects-title">Projects</h2>
+                    <p class="section-sub">University work first, then personal builds. Scroll sideways to browse each row.</p>
+                </header>
+
+                <section class="folder reveal" aria-labelledby="university-title" data-project-folder>
+                    <div class="folder-tab">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                        <h3 id="university-title">University Creations</h3>
+                    </div>
+                    <div class="folder-body">
+                        <div class="folder-meta">
+                            <p>Thesis work and coursework builds from school.</p>
+                            <span class="folder-count">7 items</span>
+                        </div>
+
+                        <div class="projects-rail" tabindex="0" aria-label="University creations, scroll horizontally">
+                            <ul class="projects-grid" role="list">
+                                <li class="project-card reveal" data-project data-slug="uc-nexus" data-src="builds/uc-nexus/index.html">
+                                    <div class="project-preview project-preview--media">
+                                        <img class="project-thumb" src="builds/uc-nexus/assets/desktop-preview.jpg" alt="UC Nexus web dashboard preview" width="640" height="400" loading="lazy" decoding="async">
+                                    </div>
+                                    <div class="project-body">
+                                        <span class="project-index" aria-hidden="true">01</span>
+                                        <h4 class="project-title">
+                                            <a href="#/uc-nexus" data-project-link>UC Nexus</a>
+                                        </h4>
+                                        <p class="project-desc">My college thesis: a University of the Cordilleras room and schedule system with a web admin panel and a React Native mobile companion.</p>
+                                        <ul class="tags" role="list"><li>Thesis</li><li>PHP</li><li>MySQL</li><li>React Native</li></ul>
+                                    </div>
+                                </li>
+                                <li class="project-card reveal" data-project data-slug="menty" data-src="lab-creations/Menty/home.html">
+                                    <div class="project-preview" data-project-preview>
+                                        <iframe class="project-frame" title="Menty preview" loading="lazy" tabindex="-1" aria-hidden="true" data-project-frame data-src="lab-creations/Menty/home.html"></iframe>
+                                    </div>
+                                    <div class="project-body">
+                                        <span class="project-index" aria-hidden="true">02</span>
+                                        <h4 class="project-title">
+                                            <a href="#/menty" data-project-link>Menty</a>
+                                        </h4>
+                                        <p class="project-desc">My senior high school thesis: a stress and anxiety chatbot with a blog, services page, and 24/7 support chat.</p>
+                                        <ul class="tags" role="list"><li>Thesis</li><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+                                    </div>
+                                </li>
+                                <li class="project-card reveal" data-project data-slug="survey-form" data-src="lab-creations/surveyForm/index.html">
+                                    <div class="project-preview" data-project-preview>
+                                        <iframe class="project-frame" title="Survey Form preview" loading="lazy" tabindex="-1" aria-hidden="true" data-project-frame data-src="lab-creations/surveyForm/index.html"></iframe>
+                                    </div>
+                                    <div class="project-body">
+                                        <span class="project-index" aria-hidden="true">03</span>
+                                        <h4 class="project-title">
+                                            <a href="#/survey-form" data-project-link>Survey Form</a>
+                                        </h4>
+                                        <p class="project-desc">A screen-time survey with text inputs, checkboxes, radio buttons, and a dropdown.</p>
+                                        <ul class="tags" role="list"><li>HTML</li><li>CSS</li><li>Forms</li></ul>
+                                    </div>
+                                </li>
+                                <li class="project-card reveal" data-project data-slug="tribute-page" data-src="lab-creations/tributePage/index.html">
+                                    <div class="project-preview" data-project-preview>
+                                        <iframe class="project-frame" title="Tribute Page preview" loading="lazy" tabindex="-1" aria-hidden="true" data-project-frame data-src="lab-creations/tributePage/index.html"></iframe>
+                                    </div>
+                                    <div class="project-body">
+                                        <span class="project-index" aria-hidden="true">04</span>
+                                        <h4 class="project-title">
+                                            <a href="#/tribute-page" data-project-link>Tribute Page</a>
+                                        </h4>
+                                        <p class="project-desc">A tribute to Marcus Aurelius, the Roman emperor and Stoic philosopher.</p>
+                                        <ul class="tags" role="list"><li>HTML</li><li>CSS</li></ul>
+                                    </div>
+                                </li>
+                                <li class="project-card reveal" data-project data-slug="technical-documentation" data-src="lab-creations/techDoc/index.html">
+                                    <div class="project-preview" data-project-preview>
+                                        <iframe class="project-frame" title="Technical Documentation preview" loading="lazy" tabindex="-1" aria-hidden="true" data-project-frame data-src="lab-creations/techDoc/index.html"></iframe>
+                                    </div>
+                                    <div class="project-body">
+                                        <span class="project-index" aria-hidden="true">05</span>
+                                        <h4 class="project-title">
+                                            <a href="#/technical-documentation" data-project-link>Technical Documentation</a>
+                                        </h4>
+                                        <p class="project-desc">An introductory Python guide with a fixed side navigation linking to each section.</p>
+                                        <ul class="tags" role="list"><li>HTML</li><li>CSS</li><li>Docs</li></ul>
+                                    </div>
+                                </li>
+                                <li class="project-card reveal" data-project data-slug="product-landing-page" data-src="lab-creations/productLanding/index.html">
+                                    <div class="project-preview" data-project-preview>
+                                        <iframe class="project-frame" title="Product Landing Page preview" loading="lazy" tabindex="-1" aria-hidden="true" data-project-frame data-src="lab-creations/productLanding/index.html"></iframe>
+                                    </div>
+                                    <div class="project-body">
+                                        <span class="project-index" aria-hidden="true">06</span>
+                                        <h4 class="project-title">
+                                            <a href="#/product-landing-page" data-project-link>Product Landing Page</a>
+                                        </h4>
+                                        <p class="project-desc">A multi-page landing site for the Samsung Galaxy S24 Ultra with home, products, and contact pages.</p>
+                                        <ul class="tags" role="list"><li>HTML</li><li>CSS</li><li>Multi-page</li></ul>
+                                    </div>
+                                </li>
+                                <li class="project-card reveal" data-project data-slug="dice-roller" data-src="lab-creations/Dice-Roller/JS_Dice.html">
+                                    <div class="project-preview" data-project-preview>
+                                        <iframe class="project-frame" title="Dice Roller preview" loading="lazy" tabindex="-1" aria-hidden="true" data-project-frame data-src="lab-creations/Dice-Roller/JS_Dice.html"></iframe>
+                                    </div>
+                                    <div class="project-body">
+                                        <span class="project-index" aria-hidden="true">07</span>
+                                        <h4 class="project-title">
+                                            <a href="#/dice-roller" data-project-link>Dice Roller</a>
+                                        </h4>
+                                        <p class="project-desc">A quick tabletop dice roller for D4 through D20. Pick how many dice, choose a type, and roll.</p>
+                                        <ul class="tags" role="list"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="folder folder-follow reveal" aria-labelledby="personal-title" data-project-folder>
+                    <div class="folder-tab">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                        <h3 id="personal-title">Personal Creations</h3>
+                    </div>
+                    <div class="folder-body">
+                        <div class="folder-meta">
+                            <p>Side projects I&rsquo;m building for fun and craft.</p>
+                            <span class="folder-count">3 items</span>
+                        </div>
+
+                        <div class="projects-rail" tabindex="0" aria-label="Personal creations, scroll horizontally">
+                            <ul class="projects-grid" role="list">
+                                <li class="project-card reveal" data-project data-slug="beybox" data-src="builds/beybox/index.html">
+                                    <div class="project-preview project-preview--media project-preview--dark">
+                                        <img class="project-thumb project-thumb--contain" src="builds/beybox/assets/beybox_icon.png" alt="BeyBox logo" width="240" height="240" loading="lazy" decoding="async">
+                                        <span class="project-status">Under development</span>
+                                    </div>
+                                    <div class="project-body">
+                                        <span class="project-index" aria-hidden="true">01</span>
+                                        <h4 class="project-title">
+                                            <a href="#/beybox" data-project-link>BeyBox</a>
+                                        </h4>
+                                        <p class="project-desc">A Beyblade X companion app for tracking your collection, building decks, searching parts, and growing toward meta and scan features.</p>
+                                        <ul class="tags" role="list"><li>Expo</li><li>React Native</li><li>TypeScript</li><li>Supabase</li></ul>
+                                    </div>
+                                </li>
+                                <li class="project-card reveal" data-project data-slug="neo" data-src="builds/neo/index.html">
+                                    <div class="project-preview project-preview--media project-preview--dark">
+                                        <img class="project-thumb project-thumb--contain" src="builds/neo/assets/logo.jpg" alt="NEO logo" width="240" height="240" loading="lazy" decoding="async">
+                                        <span class="project-status">Under development</span>
+                                    </div>
+                                    <div class="project-body">
+                                        <span class="project-index" aria-hidden="true">02</span>
+                                        <h4 class="project-title">
+                                            <a href="#/neo" data-project-link>NEO</a>
+                                        </h4>
+                                        <p class="project-desc">A Roblox combat arena built with Luau and Rojo. Still under development, with more improvements coming.</p>
+                                        <ul class="tags" role="list"><li>Roblox</li><li>Luau</li><li>Rojo</li><li>Game Dev</li></ul>
+                                    </div>
+                                </li>
+                                <li class="project-card reveal" data-project data-slug="shamito" data-src="builds/shamito/index.html" data-external-href="https://shamito-card-image-gallery.vercel.app/">
+                                    <div class="project-preview project-preview--media">
+                                        <img class="project-thumb" src="builds/shamito/assets/event-poster.jpg" alt="Shamito Pauper Cube poster" width="640" height="400" loading="lazy" decoding="async">
+                                    </div>
+                                    <div class="project-body">
+                                        <span class="project-index" aria-hidden="true">03</span>
+                                        <h4 class="project-title">
+                                            <a href="#/shamito" data-project-link>Shamito Card Gallery</a>
+                                        </h4>
+                                        <p class="project-desc">A searchable gallery for the Shamito Pauper Cube, with filters, sorting, and a best-of-three tournament board.</p>
+                                        <ul class="tags" role="list"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Scryfall</li></ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="section-foot reveal">
+                    <a class="btn btn-ghost" href="https://github.com/SamuelleC" target="_blank" rel="noopener noreferrer">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        More on GitHub<span class="sr-only"> (opens in a new tab)</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-viewer" role="dialog" aria-modal="true" aria-labelledby="viewer-title" hidden data-project-viewer>
+            <div class="viewer-bar">
+                <button class="viewer-back" type="button" data-viewer-close>
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    All projects
+                </button>
+                <h2 class="viewer-title" id="viewer-title" data-viewer-title></h2>
+                <a class="viewer-external" href="#" target="_blank" rel="noopener noreferrer" data-viewer-external>
+                    Open in new tab
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+                </a>
+            </div>
+            <iframe class="viewer-frame" title="Project" data-viewer-frame></iframe>
+        </section>
+
+        <!-- Certifications teaser -->
+        <section class="section section-tight" aria-labelledby="cert-cta-title">
+            <div class="container">
+                <div class="cta-band reveal">
+                    <div>
+                        <p class="eyebrow">04 / Certifications</p>
+                        <h2 id="cert-cta-title">Always learning</h2>
+                        <p>Curious what I&rsquo;ve studied? Here are the certifications I&rsquo;ve earned so far.</p>
+                    </div>
+                    <a class="btn btn-invert" href="certifications.html">
+                        View certifications
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section section-alt" id="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <header class="section-head reveal">
+                    <p class="eyebrow">05 / Contact</p>
+                    <h2 id="contact-title">Let&rsquo;s work together</h2>
+                    <p class="section-sub">Have a project, an opportunity, or just want to say hi? My inbox is open.</p>
+                </header>
+
+                <ul class="contact-grid" role="list">
+                    <!-- Email & phone are assembled by script.js so simple scraper bots can't harvest them from the HTML. -->
+                    <li class="contact-card reveal">
+                        <svg class="icon contact-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg>
+                        <span class="contact-label">Email</span>
+                        <a class="contact-value" href="#contact" data-contact="email" data-u="hurezmas" data-d="moc.liamg">Enable JavaScript to view</a>
+                        <button class="copy-btn" type="button" data-copy="email" hidden>Copy</button>
+                    </li>
+                    <li class="contact-card reveal">
+                        <svg class="icon contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        <span class="contact-label">Phone</span>
+                        <a class="contact-value" href="#contact" data-contact="phone" data-p="80114487190">Enable JavaScript to view</a>
+                    </li>
+                    <li class="contact-card reveal">
+                        <svg class="icon contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        <span class="contact-label">Facebook</span>
+                        <a class="contact-value" href="https://www.facebook.com/Samceliseu/" target="_blank" rel="noopener noreferrer">Samuelle Celis<span class="sr-only"> (opens in a new tab)</span></a>
+                    </li>
+                    <li class="contact-card reveal">
+                        <svg class="icon contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                        <span class="contact-label">GitHub</span>
+                        <a class="contact-value" href="https://github.com/SamuelleC" target="_blank" rel="noopener noreferrer">@SamuelleC<span class="sr-only"> (opens in a new tab)</span></a>
+                    </li>
+                    <li class="contact-card reveal">
+                        <svg class="icon contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                        <span class="contact-label">LinkedIn</span>
+                        <a class="contact-value" href="https://www.linkedin.com/in/samuelle-celis" target="_blank" rel="noopener noreferrer">Samuelle Celis<span class="sr-only"> (opens in a new tab)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span data-year>2026</span> Samuelle Celis. All rights reserved.</p>
         </div>
-        <div class="projects-grid">
-            <div class="project-tile"><a href="https://business-landing-page-celis.vercel.app/index.html" target="_blank">Mock Samsung Business Page</a></div>
-            <div class="project-tile"><a href="https://tech-doc-celis.vercel.app/" target="_blank">Python Documentation</a></div>
-            <div class="project-tile"><a href="https://tribute-celis.vercel.app/" target="_blank">Tribute Page</a></div>
-            <div class="project-tile"><a href="https://survey-celis.vercel.app/" target="_blank">Simple Survey Form</a></div>
-        </div>
-    </section>
-    <section id="contact-section" class="section-container">
-        <h2>My Contacts</h2>
-        <ul>
-            <li><strong>Phone:</strong> 09178441108</li>
-            <li><strong>FB:</strong> <a href="https://www.facebook.com/Samceliseu/" target="_blank">Samuelle Celis</a></li>
-            <li><strong>Email:</strong> samzeruh@gmail.com</li>
-        </ul>
-    </section>
-    <footer>
-        <p>© 2024 Samuelle Celis</p>
     </footer>
+
+    <button class="back-to-top" type="button" aria-label="Back to top" data-back-to-top hidden>
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+    </button>
+
+    <div class="toast" role="status" aria-live="polite" data-toast></div>
 </body>
 </html>

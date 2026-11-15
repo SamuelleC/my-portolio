@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>BeyBox | Showcase</title>
+    <style>
+        :root {
+            --bg: #0e0e0d;
+            --surface: #171715;
+            --text: #f2f2ef;
+            --muted: #a2a29c;
+            --border: #2b2b29;
+            --accent: #f2f2ef;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 40px 20px 64px;
+        }
+        .wrap { width: min(920px, 100%); margin: 0 auto; }
+        .hero {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 28px;
+            align-items: center;
+            padding: 28px;
+            border: 1px solid var(--border);
+            border-radius: 22px;
+            background: var(--surface);
+        }
+        .logo {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            border-radius: 22px;
+            border: 1px solid var(--border);
+            background: #000;
+        }
+        .eyebrow {
+            font-family: ui-monospace, Consolas, monospace;
+            font-size: 0.75rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--muted);
+        }
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 10px;
+            padding: 6px 12px;
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            font-family: ui-monospace, Consolas, monospace;
+            font-size: 0.75rem;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: var(--muted);
+        }
+        .badge::before {
+            content: "";
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #c9a227;
+            box-shadow: 0 0 0 3px rgba(201, 162, 39, 0.2);
+        }
+        h1 {
+            margin-top: 8px;
+            font-size: clamp(1.8rem, 4vw, 2.6rem);
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+        }
+        .lead { margin-top: 12px; color: var(--muted); max-width: 42rem; }
+        .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+        .tags span {
+            padding: 5px 12px;
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: var(--muted);
+        }
+        .brand {
+            margin-top: 20px;
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            background: #000;
+            overflow: hidden;
+            display: grid;
+            place-items: center;
+            min-height: 280px;
+            padding: 32px;
+        }
+        .brand img {
+            width: min(420px, 100%);
+            height: auto;
+            display: block;
+        }
+        .details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-top: 16px;
+        }
+        .panel {
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            background: var(--surface);
+            padding: 22px;
+        }
+        .panel h2 {
+            font-size: 1.05rem;
+            letter-spacing: -0.02em;
+            margin-bottom: 10px;
+        }
+        .panel p, .panel li { color: var(--muted); font-size: 0.95rem; }
+        .panel ul { margin-top: 12px; padding-left: 1.1rem; }
+        .panel li + li { margin-top: 8px; }
+        .note {
+            margin-top: 20px;
+            padding: 16px 18px;
+            border-left: 3px solid var(--accent);
+            color: var(--muted);
+            font-size: 0.92rem;
+        }
+        @media (max-width: 760px) {
+            .hero, .details { grid-template-columns: 1fr; }
+            .hero { text-align: center; justify-items: center; }
+            .tags { justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header class="hero">
+            <img class="logo" src="assets/beybox_icon.png" alt="BeyBox app icon" width="120" height="120">
+            <div>
+                <p class="eyebrow">Beyblade X companion</p>
+                <h1>BeyBox</h1>
+                <p class="badge">Under development</p>
+                <p class="lead">A mobile companion for Beyblade X. Track your collection, build decks with part stats, search the catalog, and grow toward meta rankings and camera scan.</p>
+                <div class="tags">
+                    <span>Expo</span>
+                    <span>React Native</span>
+                    <span>TypeScript</span>
+                    <span>NativeWind</span>
+                    <span>Supabase</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="brand" aria-hidden="true">
+            <img src="assets/beybox_icon.png" alt="" width="420" height="420">
+        </div>
+
+        <div class="details">
+            <section class="panel" aria-labelledby="ready-title">
+                <h2 id="ready-title">In the app today</h2>
+                <p>Core loops for collectors and deck builders.</p>
+                <ul>
+                    <li>Collection tracking with owned / total views</li>
+                    <li>Part search across the catalog</li>
+                    <li>Deck builder with stat rollups from parts</li>
+                    <li>Local persistence plus Supabase-ready data layer</li>
+                </ul>
+            </section>
+            <section class="panel" aria-labelledby="next-title">
+                <h2 id="next-title">Still building</h2>
+                <p>Next layers that round out the companion experience.</p>
+                <ul>
+                    <li>Weekly meta rankings ingest</li>
+                    <li>Camera scan for parts</li>
+                    <li>Richer catalog seeding and polish</li>
+                </ul>
+            </section>
+        </div>
+
+        <p class="note">This page is a portfolio showcase only. The full Expo app lives in its own project and is not bundled here.</p>
+    </div>
+</body>
+</html>

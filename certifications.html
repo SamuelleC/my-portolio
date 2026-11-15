@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <title>Certifications | Samuelle Celis</title>
+    <meta name="description" content="Certifications and courses completed by Samuelle Celis, frontend developer from Baguio City, Philippines.">
+    <meta name="author" content="Samuelle Celis">
+    <meta name="theme-color" content="#f5f5f3" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0e0e0d" media="(prefers-color-scheme: dark)">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Certifications | Samuelle Celis">
+    <meta property="og:description" content="Certifications and courses completed by Samuelle Celis.">
+    <meta property="og:image" content="images/profile.jpg">
+    <meta property="og:image:alt" content="Portrait of Samuelle Celis">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="theme.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="Samuelle Celis, home">
+                <span class="brand-mark" aria-hidden="true">SC</span>
+                <span class="brand-name">Samuelle Celis</span>
+            </a>
+
+            <nav class="site-nav" id="site-nav" aria-label="Primary">
+                <ul class="nav-links">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#skills">Skills</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="certifications.html" aria-current="page">Certifications</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="icon-btn theme-toggle" type="button" aria-label="Toggle dark mode" data-theme-toggle>
+                    <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+                    <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-controls="site-nav" aria-expanded="false">
+                    <span class="menu-bar" aria-hidden="true"></span>
+                    <span class="menu-bar" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="page-hero" aria-labelledby="page-title">
+            <div class="container">
+                <nav class="breadcrumb reveal" aria-label="Breadcrumb">
+                    <ol>
+                        <li><a href="index.html">Home</a></li>
+                        <li aria-current="page">Certifications</li>
+                    </ol>
+                </nav>
+                <h1 class="page-title reveal" id="page-title">Certifications</h1>
+                <p class="hero-lead reveal">Courses and credentials I&rsquo;ve picked up along the way. Tap a preview to zoom in, or open the full certificate when you want to verify it.</p>
+            </div>
+        </section>
+
+        <section class="section section-flush-top" aria-label="Certification list">
+            <div class="container">
+                <div class="filter-bar reveal" role="toolbar" aria-label="Filter certifications by category" data-filter-bar>
+                    <button class="chip" type="button" data-filter="all" aria-pressed="true">All</button>
+                    <button class="chip" type="button" data-filter="ai" aria-pressed="false">AI</button>
+                    <button class="chip" type="button" data-filter="cloud" aria-pressed="false">Cloud</button>
+                    <button class="chip" type="button" data-filter="it" aria-pressed="false">IT &amp; Networking</button>
+                    <button class="chip" type="button" data-filter="web" aria-pressed="false">Web</button>
+                    <button class="chip" type="button" data-filter="programming" aria-pressed="false">Programming</button>
+                </div>
+                <p class="filter-status" role="status" aria-live="polite" data-filter-status></p>
+
+                <ul class="cert-grid" role="list" data-cert-grid>
+
+                    <li class="cert-card reveal" data-category="it">
+                        <button class="cert-preview" type="button" data-cert-open aria-label="Preview CompTIA Tech+ certificate">
+                            <img src="assets/certificates/comptia-tech-plus.jpg" alt="CompTIA Tech+ certificate for Samuelle Hernandez Celis" width="700" height="541" loading="lazy">
+                        </button>
+                        <div class="cert-body">
+                            <div class="cert-top">
+                                <span class="cert-mark" aria-hidden="true">CT</span>
+                                <span class="cert-tag">IT &amp; Networking</span>
+                            </div>
+                            <h2 class="cert-title">CompTIA Tech+</h2>
+                            <p class="cert-issuer">CompTIA</p>
+                            <p class="cert-desc">Passed CompTIA Tech+, covering IT fundamentals from hardware and networking basics through everyday troubleshooting.</p>
+                            <dl class="cert-meta">
+                                <div><dt>Issued</dt><dd><time datetime="2026-08">Aug 2026</time></dd></div>
+                                <div><dt>Credential ID</dt><dd>COMP001023118184</dd></div>
+                            </dl>
+                            <ul class="tags" role="list"><li>IT Fundamentals</li><li>Troubleshooting</li></ul>
+                            <div class="cert-actions">
+                                <a class="cert-link" href="https://verify.CompTIA.org" target="_blank" rel="noopener noreferrer">
+                                    Verify credential<span class="sr-only"> (opens in a new tab)</span>
+                                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+                                </a>
+                                <a class="cert-link cert-link-secondary" href="assets/certificates/pdfs/comptia-tech-plus.pdf" target="_blank" rel="noopener noreferrer">View PDF</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="cert-card reveal" data-category="it">
+                        <button class="cert-preview" type="button" data-cert-open aria-label="Preview TOPCIT Level 2 certificate">
+                            <img src="assets/certificates/topcit.jpg" alt="TOPCIT Level 2 score certificate for Samuelle Celis" width="595" height="842" loading="lazy">
+                        </button>
+                        <div class="cert-body">
+                            <div class="cert-top">
+                                <span class="cert-mark" aria-hidden="true">TP</span>
+                                <span class="cert-tag">IT &amp; Networking</span>
+                            </div>
+                            <h2 class="cert-title">TOPCIT Level 2</h2>
+                            <p class="cert-issuer">IITP / TOPCIT</p>
+                            <p class="cert-desc">Sat the TOPCIT Level 2 exam (score 380 / 1000). Strongest area was System Architecture &amp; InfoSec.</p>
+                            <dl class="cert-meta">
+                                <div><dt>Issued</dt><dd><time datetime="2026-08">Aug 2026</time></dd></div>
+                                <div><dt>Certificate No.</dt><dd>TL2603000394</dd></div>
+                            </dl>
+                            <ul class="tags" role="list"><li>ICT Competency</li><li>InfoSec</li></ul>
+                            <div class="cert-actions">
+                                <a class="cert-link" href="assets/certificates/pdfs/topcit.pdf" target="_blank" rel="noopener noreferrer">
+                                    View certificate<span class="sr-only"> (opens in a new tab)</span>
+                                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="cert-card reveal" data-category="cloud">
+                        <button class="cert-preview" type="button" data-cert-open aria-label="Preview Cloud Pricing and Support certificate">
+                            <img src="assets/certificates/percipio-cloud-pricing.jpg" alt="Percipio certificate for Cloud Pricing and Support" width="700" height="541" loading="lazy">
+                        </button>
+                        <div class="cert-body">
+                            <div class="cert-top">
+                                <span class="cert-mark" aria-hidden="true">PC</span>
+                                <span class="cert-tag">Cloud</span>
+                            </div>
+                            <h2 class="cert-title">Cloud Pricing and Support</h2>
+                            <p class="cert-issuer">Skillsoft Percipio</p>
+                            <p class="cert-desc">Short course on how cloud pricing models work and what support options usually look like across providers.</p>
+                            <dl class="cert-meta">
+                                <div><dt>Issued</dt><dd><time datetime="2026-07">Jul 2026</time></dd></div>
+                                <div><dt>Certificate No.</dt><dd>385787</dd></div>
+                            </dl>
+                            <ul class="tags" role="list"><li>Cloud</li><li>Pricing</li></ul>
+                            <div class="cert-actions">
+                                <a class="cert-link" href="assets/certificates/pdfs/percipio-cloud-pricing.pdf" target="_blank" rel="noopener noreferrer">
+                                    View certificate<span class="sr-only"> (opens in a new tab)</span>
+                                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="cert-card reveal" data-category="cloud">
+                        <button class="cert-preview" type="button" data-cert-open aria-label="Preview Core Cloud Services certificate">
+                            <img src="assets/certificates/percipio-core-cloud.jpg" alt="Percipio certificate for Core Cloud Services" width="700" height="541" loading="lazy">
+                        </button>
+                        <div class="cert-body">
+                            <div class="cert-top">
+                                <span class="cert-mark" aria-hidden="true">PC</span>
+                                <span class="cert-tag">Cloud</span>
+                            </div>
+                            <h2 class="cert-title">Core Cloud Services</h2>
+                            <p class="cert-issuer">Skillsoft Percipio</p>
+                            <p class="cert-desc">Walkthrough of the building blocks most cloud platforms share: compute, storage, networking, and identity.</p>
+                            <dl class="cert-meta">
+                                <div><dt>Issued</dt><dd><time datetime="2026-07">Jul 2026</time></dd></div>
+                                <div><dt>Certificate No.</dt><dd>369575</dd></div>
+                            </dl>
+                            <ul class="tags" role="list"><li>Cloud</li><li>Infrastructure</li></ul>
+                            <div class="cert-actions">
+                                <a class="cert-link" href="assets/certificates/pdfs/percipio-core-cloud.pdf" target="_blank" rel="noopener noreferrer">
+                                    View certificate<span class="sr-only"> (opens in a new tab)</span>
+                                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="cert-card reveal" data-category="cloud">
+                        <button class="cert-preview" type="button" data-cert-open aria-label="Preview Major Cloud Service Providers certificate">
+                            <img src="assets/certificates/percipio-major-providers.jpg" alt="Percipio certificate for Major Cloud Service Providers" width="700" height="541" loading="lazy">
+                        </button>
+                        <div class="cert-body">
+                            <div class="cert-top">
+                                <span class="cert-mark" aria-hidden="true">PC</span>
+                                <span class="cert-tag">Cloud</span>
+                            </div>
+                            <h2 class="cert-title">Major Cloud Service Providers</h2>
+                            <p class="cert-issuer">Skillsoft Percipio</p>
+                            <p class="cert-desc">Compared the big cloud vendors and how their core offerings stack up when you&rsquo;re choosing a platform.</p>
+                            <dl class="cert-meta">
+                                <div><dt>Issued</dt><dd><time datetime="2026-07">Jul 2026</time></dd></div>
+                                <div><dt>Certificate No.</dt><dd>386174</dd></div>
+                            </dl>
+                            <ul class="tags" role="list"><li>AWS</li><li>Azure</li><li>GCP</li></ul>
+                            <div class="cert-actions">
+                                <a class="cert-link" href="assets/certificates/pdfs/percipio-major-providers.pdf" target="_blank" rel="noopener noreferrer">
+                                    View certificate<span class="sr-only"> (opens in a new tab)</span>
+                                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="cert-card reveal" data-category="ai">
+                        <button class="cert-preview" type="button" data-cert-open aria-label="Preview Google AI Essentials specialization certificate">
+                            <img src="assets/certificates/coursera-google-ai-essentials.jpg" alt="Coursera Google AI Essentials specialization certificate" width="700" height="541" loading="lazy">
+                        </button>
+                        <div class="cert-body">
+                            <div class="cert-top">
+                                <span class="cert-mark" aria-hidden="true">GA</span>
+                                <span class="cert-tag">AI</span>
+                            </div>
+                            <h2 class="cert-title">Google AI Essentials</h2>
+                            <p class="cert-issuer">Google · Coursera</p>
+                            <p class="cert-desc">Finished Google&rsquo;s five-course AI Essentials path. Prompting, responsible use, and using AI tools day to day without the fluff.</p>
+                            <dl class="cert-meta">
+                                <div><dt>Issued</dt><dd><time datetime="2026-07">Jul 2026</time></dd></div>
+                                <div><dt>Credential ID</dt><dd>XW9G57CHDLD1</dd></div>
+                            </dl>
+                            <ul class="tags" role="list"><li>Specialization</li><li>AI Tools</li></ul>
+                            <div class="cert-actions">
+                                <a class="cert-link" href="https://coursera.org/verify/specialization/XW9G57CHDLD1" target="_blank" rel="noopener noreferrer">
+                                    Verify credential<span class="sr-only"> (opens in a new tab)</span>
+                                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+                                </a>
+                                <a class="cert-link cert-link-secondary" href="assets/certificates/pdfs/coursera-google-ai-essentials.pdf" target="_blank" rel="noopener noreferrer">View PDF</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="cert-card reveal" data-category="ai">
+                        <button class="cert-preview" type="button" data-cert-open aria-label="Preview Stay Ahead of the AI Curve certificate">
+                            <img src="assets/certificates/coursera-stay-ahead.jpg" alt="Coursera certificate for Stay Ahead of the AI Curve" width="700" height="541" loading="lazy">
+                        </button>
+                        <div class="cert-body">
+                            <div class="cert-top">
+                                <span class="cert-mark" aria-hidden="true">GA</span>
+                                <span class="cert-tag">AI</span>
+                            </div>
+                            <h2 class="cert-title">Stay Ahead of the AI Curve</h2>
+                            <p class="cert-issuer">Google · Coursera</p>
+                            <p class="cert-desc">Wrapped the specialization with habits for keeping up as AI tools and workflows keep changing.</p>
+                            <dl class="cert-meta">
+                                <div><dt>Issued</dt><dd><time datetime="2026-07">Jul 2026</time></dd></div>
+                                <div><dt>Credential ID</dt><dd>OF7ZG952B4GK</dd></div>
+                            </dl>
+                            <ul class="tags" role="list"><li>AI</li><li>Continuous Learning</li></ul>
+                            <div class="cert-actions">
+                                <a class="cert-link" href="https://coursera.org/verify/OF7ZG952B4GK" target="_blank" rel="noopener noreferrer">
+                                    Verify credential<span class="sr-only"> (opens in a new tab)</span>
+                                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+                                </a>
+                                <a class="cert-link cert-link-secondary" href="assets/certificates/pdfs/coursera-stay-ahead.pdf" target="_blank" rel="noopener noreferrer">View PDF</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="cert-card reveal" data-category="ai">
+                        <button class="cert-preview" type="button" data-cert-open aria-label="Preview Use AI Responsibly certificate">
+                            <img src="assets/certificates/coursera-use-ai-responsibly.jpg" alt="Coursera certificate for Use AI Responsibly" width="700" height="541" loading="lazy">
+                        </button>
+                        <div class="cert-body">
+                            <div class="cert-top">
+                                <span class="cert-mark" aria-hidden="true">GA</span>
+                                <span class="cert-tag">AI</span>
+                            </div>
+                            <h2 class="cert-title">Use AI Responsibly</h2>
+                            <p class="cert-issuer">Google · Coursera</p>
+                            <p class="cert-desc">Focused on the ethics side: bias, privacy, and knowing when not to trust an AI output at face value.</p>
+                            <dl class="cert-meta">
+                                <div><dt>Issued</dt><dd><time datetime="2026-07">Jul 2026</time></dd></div>
+                                <div><dt>Credential ID</dt><dd>8DCW3PRH62UH</dd></div>
+                            </dl>
+                            <ul class="tags" role="list"><li>AI Ethics</li><li>Responsible AI</li></ul>
+                            <div class="cert-actions">
+                                <a class="cert-link" href="https://coursera.org/verify/8DCW3PRH62UH" target="_blank" rel="noopener noreferrer">
+                                    Verify credential<span class="sr-only"> (opens in a new tab)</span>
+                                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+                                </a>
+                                <a class="cert-link cert-link-secondary" href="assets/certificates/pdfs/coursera-use-ai-responsibly.pdf" target="_blank" rel="noopener noreferrer">View PDF</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="cert-card reveal" data-category="cloud">
+                        <button class="cert-preview" type="button" data-cert-open aria-label="Preview The Benefits of Cloud Computing certificate">
+                            <img src="assets/certificates/percipio-cloud-benefits.jpg" alt="Percipio certificate for The Benefits of Cloud Computing" width="700" height="541" loading="lazy">
+                        </button>
+                        <div class="cert-body">
+                            <div class="cert-top">
+                                <span class="cert-mark" aria-hidden="true">PC</span>
+                                <span class="cert-tag">Cloud</span>
+                            </div>
+                            <h2 class="cert-title">The Benefits of Cloud Computing</h2>
+                            <p class="cert-issuer">Skillsoft Percipio</p>
+                            <p class="cert-desc">A grounded look at why teams move to the cloud: scale, cost tradeoffs, and operational flexibility.</p>
+                            <dl class="cert-meta">
+                                <div><dt>Issued</dt><dd><time datetime="2026-07">Jul 2026</time></dd></div>
+                                <div><dt>Certificate No.</dt><dd>344904</dd></div>
+                            </dl>
+                            <ul class="tags" role="list"><li>Cloud</li><li>Fundamentals</li></ul>
+                            <div class="cert-actions">
+                                <a class="cert-link" href="assets/certificates/pdfs/percipio-cloud-benefits.pdf" target="_blank" rel="noopener noreferrer">
+                                    View certificate<span class="sr-only"> (opens in a new tab)</span>
+                                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="cert-card reveal" data-category="ai">
+                        <button class="cert-preview" type="button" data-cert-open aria-label="Preview Discover the Art of Prompting certificate">
+                            <img src="assets/certificates/coursera-prompting.jpg" alt="Coursera certificate for Discover the Art of Prompting" width="700" height="541" loading="lazy">
+                        </button>
+                        <div class="cert-body">
+                            <div class="cert-top">
+                                <span class="cert-mark" aria-hidden="true">GA</span>
+                                <span class="cert-tag">AI</span>
+                            </div>
+                            <h2 class="cert-title">Discover the Art of Prompting</h2>
+                            <p class="cert-issuer">Google · Coursera</p>
+                            <p class="cert-desc">Learned how to write clearer prompts so AI answers are actually useful instead of vague.</p>
+                            <dl class="cert-meta">
+                                <div><dt>Issued</dt><dd><time datetime="2026-07">Jul 2026</time></dd></div>
+                                <div><dt>Credential ID</dt><dd>U9NAPBZAUNMF</dd></div>
+                            </dl>
+                            <ul class="tags" role="list"><li>Prompting</li><li>AI</li></ul>
+                            <div class="cert-actions">
+                                <a class="cert-link" href="https://coursera.org/verify/U9NAPBZAUNMF" target="_blank" rel="noopener noreferrer">
+                                    Verify credential<span class="sr-only"> (opens in a new tab)</span>
+                                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+                                </a>
+                                <a class="cert-link cert-link-secondary" href="assets/certificates/pdfs/coursera-prompting.pdf" target="_blank" rel="noopener noreferrer">View PDF</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="cert-card reveal" data-category="ai">
+                        <button class="cert-preview" type="button" data-cert-open aria-label="Preview Maximize Productivity With AI Tools certificate">
+                            <img src="assets/certificates/coursera-productivity.jpg" alt="Coursera certificate for Maximize Productivity With AI Tools" width="700" height="541" loading="lazy">
+                        </button>
+                        <div class="cert-body">
+                            <div class="cert-top">
+                                <span class="cert-mark" aria-hidden="true">GA</span>
+                                <span class="cert-tag">AI</span>
+                            </div>
+                            <h2 class="cert-title">Maximize Productivity With AI Tools</h2>
+                            <p class="cert-issuer">Google · Coursera</p>
+                            <p class="cert-desc">Hands-on practice with AI tools that help me move faster on writing, research, and everyday tasks.</p>
+                            <dl class="cert-meta">
+                                <div><dt>Issued</dt><dd><time datetime="2026-07">Jul 2026</time></dd></div>
+                                <div><dt>Credential ID</dt><dd>QTTNO6Y8SKIN</dd></div>
+                            </dl>
+                            <ul class="tags" role="list"><li>AI Tools</li><li>Productivity</li></ul>
+                            <div class="cert-actions">
+                                <a class="cert-link" href="https://coursera.org/verify/QTTNO6Y8SKIN" target="_blank" rel="noopener noreferrer">
+                                    Verify credential<span class="sr-only"> (opens in a new tab)</span>
+                                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+                                </a>
+                                <a class="cert-link cert-link-secondary" href="assets/certificates/pdfs/coursera-productivity.pdf" target="_blank" rel="noopener noreferrer">View PDF</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="cert-card reveal" data-category="ai">
+                        <button class="cert-preview" type="button" data-cert-open aria-label="Preview Introduction to AI certificate">
+                            <img src="assets/certificates/coursera-intro-ai.jpg" alt="Coursera certificate for Introduction to AI" width="700" height="541" loading="lazy">
+                        </button>
+                        <div class="cert-body">
+                            <div class="cert-top">
+                                <span class="cert-mark" aria-hidden="true">GA</span>
+                                <span class="cert-tag">AI</span>
+                            </div>
+                            <h2 class="cert-title">Introduction to AI</h2>
+                            <p class="cert-issuer">Google · Coursera</p>
+                            <p class="cert-desc">Started the Google AI Essentials path here. A clear intro to what AI actually is and how it shows up in real work.</p>
+                            <dl class="cert-meta">
+                                <div><dt>Issued</dt><dd><time datetime="2026-07">Jul 2026</time></dd></div>
+                                <div><dt>Credential ID</dt><dd>12A6P5DSOW0U</dd></div>
+                            </dl>
+                            <ul class="tags" role="list"><li>AI Fundamentals</li></ul>
+                            <div class="cert-actions">
+                                <a class="cert-link" href="https://coursera.org/verify/12A6P5DSOW0U" target="_blank" rel="noopener noreferrer">
+                                    Verify credential<span class="sr-only"> (opens in a new tab)</span>
+                                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+                                </a>
+                                <a class="cert-link cert-link-secondary" href="assets/certificates/pdfs/coursera-intro-ai.pdf" target="_blank" rel="noopener noreferrer">View PDF</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="cert-card reveal" data-category="it">
+                        <button class="cert-preview" type="button" data-cert-open aria-label="Preview CCNA Switching Routing and Wireless Essentials certificate">
+                            <img src="assets/certificates/ccna-srwe.jpg" alt="Cisco Networking Academy CCNA SRWE certificate" width="700" height="474" loading="lazy">
+                        </button>
+                        <div class="cert-body">
+                            <div class="cert-top">
+                                <span class="cert-mark" aria-hidden="true">CN</span>
+                                <span class="cert-tag">IT &amp; Networking</span>
+                            </div>
+                            <h2 class="cert-title">CCNA: Switching, Routing, and Wireless Essentials</h2>
+                            <p class="cert-issuer">Cisco Networking Academy · University of the Cordilleras</p>
+                            <p class="cert-desc">Completed Cisco&rsquo;s SRWE course through UC&rsquo;s Networking Academy, covering VLANs, routing, and wireless basics.</p>
+                            <dl class="cert-meta">
+                                <div><dt>Issued</dt><dd><time datetime="2026-04">Apr 2026</time></dd></div>
+                                <div><dt>Credential ID</dt><dd title="6103235d-e91d-463a-a84e-5b33627ec592">6103235d-e91d…</dd></div>
+                            </dl>
+                            <ul class="tags" role="list"><li>Networking</li><li>Cisco</li></ul>
+                            <div class="cert-actions">
+                                <a class="cert-link" href="assets/certificates/pdfs/ccna-srwe.pdf" target="_blank" rel="noopener noreferrer">
+                                    View certificate<span class="sr-only"> (opens in a new tab)</span>
+                                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="cert-card reveal" data-category="web">
+                        <button class="cert-preview" type="button" data-cert-open aria-label="Preview freeCodeCamp Responsive Web Design certificate">
+                            <img src="assets/certificates/freecodecamp-rwd.png" alt="freeCodeCamp Legacy Responsive Web Design certificate" width="700" height="494" loading="lazy">
+                        </button>
+                        <div class="cert-body">
+                            <div class="cert-top">
+                                <span class="cert-mark" aria-hidden="true">FC</span>
+                                <span class="cert-tag">Web</span>
+                            </div>
+                            <h2 class="cert-title">Legacy Responsive Web Design</h2>
+                            <p class="cert-issuer">freeCodeCamp</p>
+                            <p class="cert-desc">About 300 hours of responsive HTML and CSS. Still the foundation I lean on whenever I&rsquo;m building layouts.</p>
+                            <dl class="cert-meta">
+                                <div><dt>Issued</dt><dd><time datetime="2024-10">Oct 2024</time></dd></div>
+                                <div><dt>Credential</dt><dd>samuellec</dd></div>
+                            </dl>
+                            <ul class="tags" role="list"><li>HTML</li><li>CSS</li><li>Responsive</li></ul>
+                            <div class="cert-actions">
+                                <a class="cert-link" href="https://freecodecamp.org/certification/samuellec/responsive-web-design" target="_blank" rel="noopener noreferrer">
+                                    Verify credential<span class="sr-only"> (opens in a new tab)</span>
+                                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="cert-card reveal" data-category="programming">
+                        <button class="cert-preview" type="button" data-cert-open aria-label="Preview Introduction to C++ certificate">
+                            <img src="assets/certificates/sololearn-cpp.jpg" alt="SoloLearn Introduction to C++ certificate" width="700" height="495" loading="lazy">
+                        </button>
+                        <div class="cert-body">
+                            <div class="cert-top">
+                                <span class="cert-mark" aria-hidden="true">SL</span>
+                                <span class="cert-tag">Programming</span>
+                            </div>
+                            <h2 class="cert-title">Introduction to C++</h2>
+                            <p class="cert-issuer">SoloLearn</p>
+                            <p class="cert-desc">Built a solid base in C++ syntax and logic, useful when I dig into systems-level or game-related code.</p>
+                            <dl class="cert-meta">
+                                <div><dt>Issued</dt><dd><time datetime="2024-07">Jul 2024</time></dd></div>
+                                <div><dt>Credential ID</dt><dd>CC-7ISSLWAM</dd></div>
+                            </dl>
+                            <ul class="tags" role="list"><li>C++</li></ul>
+                            <div class="cert-actions">
+                                <a class="cert-link" href="https://www.sololearn.com/certificates/CC-7ISSLWAM" target="_blank" rel="noopener noreferrer">
+                                    Verify credential<span class="sr-only"> (opens in a new tab)</span>
+                                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="cert-card reveal" data-category="programming">
+                        <button class="cert-preview" type="button" data-cert-open aria-label="Preview Introduction to Python certificate">
+                            <img src="assets/certificates/sololearn-python.jpg" alt="SoloLearn Introduction to Python certificate" width="700" height="495" loading="lazy">
+                        </button>
+                        <div class="cert-body">
+                            <div class="cert-top">
+                                <span class="cert-mark" aria-hidden="true">SL</span>
+                                <span class="cert-tag">Programming</span>
+                            </div>
+                            <h2 class="cert-title">Introduction to Python</h2>
+                            <p class="cert-issuer">SoloLearn</p>
+                            <p class="cert-desc">Earned a foundational Python cert covering the theory and practice I still use for scripting and quick tools.</p>
+                            <dl class="cert-meta">
+                                <div><dt>Issued</dt><dd><time datetime="2024-06">Jun 2024</time></dd></div>
+                                <div><dt>Credential ID</dt><dd>CC-U9TYVMOH</dd></div>
+                            </dl>
+                            <ul class="tags" role="list"><li>Python</li></ul>
+                            <div class="cert-actions">
+                                <a class="cert-link" href="https://www.sololearn.com/certificates/CC-U9TYVMOH" target="_blank" rel="noopener noreferrer">
+                                    Verify credential<span class="sr-only"> (opens in a new tab)</span>
+                                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="cert-card reveal" data-category="programming">
+                        <button class="cert-preview" type="button" data-cert-open aria-label="Preview Introduction to SQL certificate">
+                            <img src="assets/certificates/sololearn-sql.jpg" alt="SoloLearn Introduction to SQL certificate" width="700" height="495" loading="lazy">
+                        </button>
+                        <div class="cert-body">
+                            <div class="cert-top">
+                                <span class="cert-mark" aria-hidden="true">SL</span>
+                                <span class="cert-tag">Programming</span>
+                            </div>
+                            <h2 class="cert-title">Introduction to SQL</h2>
+                            <p class="cert-issuer">SoloLearn</p>
+                            <p class="cert-desc">Got comfortable querying and shaping data with SQL, from basic selects to joins and filters.</p>
+                            <dl class="cert-meta">
+                                <div><dt>Issued</dt><dd><time datetime="2024-04">Apr 2024</time></dd></div>
+                                <div><dt>Credential ID</dt><dd>CC-PDIJA1FX</dd></div>
+                            </dl>
+                            <ul class="tags" role="list"><li>SQL</li><li>Databases</li></ul>
+                            <div class="cert-actions">
+                                <a class="cert-link" href="https://www.sololearn.com/certificates/CC-PDIJA1FX" target="_blank" rel="noopener noreferrer">
+                                    Verify credential<span class="sr-only"> (opens in a new tab)</span>
+                                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="cert-card reveal" data-category="programming">
+                        <button class="cert-preview" type="button" data-cert-open aria-label="Preview Introduction to Java certificate">
+                            <img src="assets/certificates/sololearn-java.jpg" alt="SoloLearn Introduction to Java certificate" width="700" height="495" loading="lazy">
+                        </button>
+                        <div class="cert-body">
+                            <div class="cert-top">
+                                <span class="cert-mark" aria-hidden="true">SL</span>
+                                <span class="cert-tag">Programming</span>
+                            </div>
+                            <h2 class="cert-title">Introduction to Java</h2>
+                            <p class="cert-issuer">SoloLearn</p>
+                            <p class="cert-desc">Covered Java&rsquo;s core concepts and OOP patterns, enough to read and write straightforward applications.</p>
+                            <dl class="cert-meta">
+                                <div><dt>Issued</dt><dd><time datetime="2024-01">Jan 2024</time></dd></div>
+                                <div><dt>Credential ID</dt><dd>CC-WO329VAC</dd></div>
+                            </dl>
+                            <ul class="tags" role="list"><li>Java</li></ul>
+                            <div class="cert-actions">
+                                <a class="cert-link" href="https://www.sololearn.com/certificates/CC-WO329VAC" target="_blank" rel="noopener noreferrer">
+                                    Verify credential<span class="sr-only"> (opens in a new tab)</span>
+                                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="cert-card reveal" data-category="web">
+                        <button class="cert-preview" type="button" data-cert-open aria-label="Preview JavaScript Programming participation certificate">
+                            <img src="assets/certificates/javascript.jpg" alt="STI College Fairview JavaScript Programming webinar certificate" width="700" height="990" loading="lazy">
+                        </button>
+                        <div class="cert-body">
+                            <div class="cert-top">
+                                <span class="cert-mark" aria-hidden="true">STI</span>
+                                <span class="cert-tag">Web</span>
+                            </div>
+                            <h2 class="cert-title">JavaScript Programming Webinar</h2>
+                            <p class="cert-issuer">STI College Fairview · ICT Club</p>
+                            <p class="cert-desc">Joined an ICT Club webinar on JavaScript back in SHS. Early hands-on exposure that stuck with me.</p>
+                            <dl class="cert-meta">
+                                <div><dt>Issued</dt><dd><time datetime="2021-11">Nov 2021</time></dd></div>
+                                <div><dt>Type</dt><dd>Participation</dd></div>
+                            </dl>
+                            <ul class="tags" role="list"><li>JavaScript</li></ul>
+                            <div class="cert-actions">
+                                <a class="cert-link" href="assets/certificates/pdfs/javascript.pdf" target="_blank" rel="noopener noreferrer">
+                                    View certificate<span class="sr-only"> (opens in a new tab)</span>
+                                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="cert-card reveal" data-category="programming">
+                        <button class="cert-preview" type="button" data-cert-open aria-label="Preview C# Programming participation certificate">
+                            <img src="assets/certificates/csharp.jpg" alt="STI College Fairview C# Programming webinar certificate" width="700" height="990" loading="lazy">
+                        </button>
+                        <div class="cert-body">
+                            <div class="cert-top">
+                                <span class="cert-mark" aria-hidden="true">STI</span>
+                                <span class="cert-tag">Programming</span>
+                            </div>
+                            <h2 class="cert-title">C# Programming Webinar</h2>
+                            <p class="cert-issuer">STI College Fairview · ICT Club</p>
+                            <p class="cert-desc">Participated in a C# webinar with the SHS ICT Club. One of the first times I touched a typed language in a group setting.</p>
+                            <dl class="cert-meta">
+                                <div><dt>Issued</dt><dd><time datetime="2021-11">Nov 2021</time></dd></div>
+                                <div><dt>Type</dt><dd>Participation</dd></div>
+                            </dl>
+                            <ul class="tags" role="list"><li>C#</li></ul>
+                            <div class="cert-actions">
+                                <a class="cert-link" href="assets/certificates/pdfs/csharp.pdf" target="_blank" rel="noopener noreferrer">
+                                    View certificate<span class="sr-only"> (opens in a new tab)</span>
+                                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M8 7h9v9"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <p class="empty-state" data-empty-state hidden>Nothing in this category yet. Check back soon!</p>
+            </div>
+        </section>
+
+        <section class="section section-tight" aria-labelledby="cert-contact-title">
+            <div class="container">
+                <div class="cta-band reveal">
+                    <div>
+                        <p class="eyebrow">Next step</p>
+                        <h2 id="cert-contact-title">Like what you see?</h2>
+                        <p>Take a look at my projects or just say hi. I&rsquo;d love to hear from you.</p>
+                    </div>
+                    <a class="btn btn-invert" href="index.html#contact">
+                        Contact me
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span data-year>2026</span> Samuelle Celis. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" type="button" aria-label="Back to top" data-back-to-top hidden>
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+    </button>
+
+    <dialog class="cert-lightbox" data-cert-lightbox aria-label="Certificate preview">
+        <form method="dialog" class="cert-lightbox-bar">
+            <button class="icon-btn" type="submit" aria-label="Close preview" data-cert-close>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+            </button>
+        </form>
+        <img src="" alt="" data-cert-lightbox-img>
+    </dialog>
+
+    <div class="toast" role="status" aria-live="polite" data-toast></div>
+</body>
+</html>
